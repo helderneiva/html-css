@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de Teste</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightgray;
+            color: black;
+        }
+
+        table{
+            border-collapse: collapse;
+            height: 300px;
+            margin: auto;
+            width: 95vw;
+        }
+
+        caption{
+            font-size: 1.2em;
+            font-weight: bolder;
+            padding: 20px;
+        }
+
+        th, td{
+            border: 1px solid black;
+            width: 250px
+        }
+
+        tr:nth-child(even){
+            background-color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="cidad">
+            <col class="csex">
+            <col class="cprof">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>35 anos</td>
+            <td>Feminino</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr class="destaque">
+            <td>Fernando</td>
+            <td>28 anos</td>
+            <td>Masculino</td>
+            <td>Secretário</td>
+        </tr>
+        <tr>
+            <td>Claudia</td>
+            <td>26 anos</td>
+            <td>Feminino</td>
+            <td>Policial</td>
+        </tr>
+        <tr>
+            <td>Leo</td>
+            <td>38 anos</td>
+            <td>Masculino</td>
+            <td>Professor</td>
+        </tr>
+    </table>
+</body>
+</html>
