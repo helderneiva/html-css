@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+        }
+
+        .campo{
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            margin-bottom: 10px;
+        }
+
+        #inome, #isobrenome{
+            font-weight: normal;
+            font-size: 15px;
+        }
+
+        #enviar{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            margin-top: 10px;
+            font-size: 15px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Primeiro Formulário</h1>
+    <form action="cadastro.php" autocomplete="on" method="post">
+        <div class="campo">
+            <label for="">Nome:</label>
+            <input type="text" name="nome" id="inome">
+        </div>
+
+        <div class="campo">
+            <label for="isobrenome">Sobrenome</label>
+            <input type="text" name="sobrenome" id="isobrenome">
+        </div>
+
+        <input type="submit" value="Enviar" id="enviar">
+
+    </form>
+</body>
+</html>
