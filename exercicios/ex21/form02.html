@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segundo Formulário</title>
+    <style>
+       *{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+        }
+
+        .campo{
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            margin-bottom: 10px;
+        }
+
+        #iusu, #isen{
+            font-weight: normal;
+            font-size: 15px;
+        }
+
+        #enviar, #sair{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            margin-top: 10px;
+            font-size: 15px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de Formulários</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <div class="campo">
+            <label for="iusu">Usuário:</label>
+            <input type="text" name="usuario" id="iusu" required minlength="8" maxlength="15" size="20" placeholder="nome de usuario" autocomplete="username">
+        </div> 
+        
+        <div class="campo">
+            <label for="isen">Senha:</label>
+            <input type="password" name="senha" id="isen" required minlength="8" maxlength="20" size="20" placeholder="senha minimo 8 caracteres" autocomplete="current-password">
+        </div> 
+
+        <input type="submit" value="Enviar" id="enviar">
+        
+
+    </form>
+</body>
+</html>
