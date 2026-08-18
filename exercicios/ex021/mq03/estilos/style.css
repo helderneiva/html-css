@@ -15,12 +15,54 @@ html{
 }
 
 body{
+    background-color: lightgray;
+}
+
+header{
+    background-color: gray;
+}
+
+header > h1{
+    text-align: center;
+    padding: 10px;
+    font-size: 2em;
+}
+
+menu{
+    background-color: rgb(78, 78, 78);
+    padding: 10px;
+}
+
+menu > ul{
+    list-style-type: none;
+    padding: 0px;
+}
+
+menu > ul > li > a{
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    border: 1px solid rgb(156, 155, 155);
+}
+
+menu > ul > li > a:hover{
+    background-color: rgb(119, 119, 119);
+    
+}
+
+.menu{
+    width: 90vw;
+}
+
+.mobilefirst{
     background: black url(../imagens/back-phone.jpg) no-repeat;
     background-size: cover;
     background-position: center center;
 }
 
-main{
+.query{
     background-color: rgba(255, 255, 255, 0.74);
     width: 400px;
     border-radius: 20px;
@@ -29,7 +71,7 @@ main{
     margin-top: 20px;
 }
 
-h1{
+div > h1{
     text-align: center;
     font-size: 2em;
     color: white;
