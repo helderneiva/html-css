@@ -9,5 +9,36 @@
 }
 
 body{
-    
+    background-color: lightgray;
+}
+
+header{
+    background-color: gray;
+}
+
+h1{
+    padding: 10PX;
+    text-align: center;
+}
+
+menu{
+    display: block;
+}
+
+menu > ul{
+    list-style-type: none;
+}
+
+menu > ul > li > a{
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    background-color: rgb(97, 97, 97);
+    color: white;
+    border-top: 1px solid gray;
+}
+
+menu > ul > li > a:hover{
+    background-color: gray;
 }
