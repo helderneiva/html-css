@@ -1,1 +1,44 @@
 @charset "UTF-8";
+
+#burguer{
+    background-color: #010c5e;
+    display: block;
+    color: white;
+}
+
+menu{
+    display: block;
+}
+
+menu > ul{
+    list-style-type: none;
+}
+
+menu > ul > li > a{
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    background-color: var(--darkblue);
+    color: white;
+    border-top: 2px solid var(--blue);
+}
+
+menu > ul > li > a:hover{
+    background-color: #133da0;
+}
+
+.media-query{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#celular { 
+    display: block;
+    margin-top: 15px;
+}
+
+#tablet, #impressora, #computador, #tv {
+    display: none; 
+}

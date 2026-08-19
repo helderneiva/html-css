@@ -1,44 +1,51 @@
 @charset "UTF-8";
 
+:root{
+    --lightblue: #5AC4CC;
+    --blue: #0243D9;
+    --darkblue: #010f75;
+}
+
 *{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1,3em;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
 body{
-    background-color: lightgray;
+    background-color: var(--lightblue);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1,3em;
 }
 
 header{
-    background-color: gray;
+    background-color: var(--blue);
+    color: #F2F2F2;
 }
 
 h1{
-    padding: 10PX;
-    text-align: center;
-}
-
-menu{
-    display: block;
-}
-
-menu > ul{
-    list-style-type: none;
-}
-
-menu > ul > li > a{
-    text-align: center;
-    text-decoration: none;
-    display: block;
     padding: 10px;
-    background-color: rgb(97, 97, 97);
-    color: white;
-    border-top: 1px solid gray;
+    text-align: center;
 }
 
-menu > ul > li > a:hover{
-    background-color: gray;
+main{
+    width: 90%;
+    max-width: 1200px;
+    height: auto;
+    background-color: white;
+    margin: 15px auto;
+    margin-top: 10px;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.menu-responsivo > h2 {
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.menu-responsivo > p{
+    text-align: justify;
+    margin-bottom: 20px;
+    text-indent: 10px;
 }
