@@ -48,6 +48,6 @@ menu > ul > li > a:hover{
     margin-top: 15px;
 }
 
-#tablet, #impressora, #computador, #tv {
+#tablet, #computador{
     display: none; 
 }
