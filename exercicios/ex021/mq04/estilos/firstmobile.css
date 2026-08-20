@@ -1,13 +1,22 @@
 @charset "UTF-8";
 
-#burguer{
-    background-color: #010c5e;
+.burguer{
+    background-color: #000527;
     display: block;
-    color: white;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.burguer:hover{
+    background-color: white;
+    color: #000527;
 }
 
 menu{
-    display: block;
+    display: none;
 }
 
 menu > ul{

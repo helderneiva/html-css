@@ -11,8 +11,10 @@
 <body>
     <header>
         <h1>Menu Responsivo</h1>
-        <img src="imagens/menu.svg" alt="menu-list" id="burguer">
-        <menu>
+        <div class="burguer" onclick="clickMenu ()">
+            <svg id="burguer" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu-icon lucide-menu"><path d="M4 5h16"/><path d="M4 12h16"/><path d="M4 19h16"/></svg>
+        </div>
+        <menu id="itens">
             <ul>
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
@@ -42,5 +44,13 @@
             <img src="imagens/icon-tv.png" alt="versão para tv" id="tv">
         </section>
     </main>
+    <script>
+         function clickMenu() { var itens = document.getElementById('itens');
+         if (itens.style.display === 'block') {
+            itens.style.display = 'none';
+        } else { itens.style.display = 'block';
+        }
+    }
+    </script>
 </body>
 </html>
